@@ -90,11 +90,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             if (!user.isEmailVerified()){
                                 Toast.makeText(LoginActivity.this, "Please Verify email.",Toast.LENGTH_SHORT).show();
+
+
                             }
                             else{
                                 // start main activity
                                 finish();
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+
                             }
                         }
                         else {
@@ -116,7 +119,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         else if (view == textViewResetPassword){
             // Reset password through email
-            firebaseAuth.getInstance().sendPasswordResetEmail("frodo1642@gmail.com.com")
+            firebaseAuth.getInstance().sendPasswordResetEmail("silasodhiambo05@gmail.com.com")
                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {

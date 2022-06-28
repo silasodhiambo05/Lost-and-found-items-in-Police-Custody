@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private LostFragment lostFrag = new LostFragment();
     private FoundFragment foundFrag = new FoundFragment();
 
-    public static final String POST_ROUTE = "com.example.lostfound.postpage";
+    public static final String POST_ROUTE = "com.example.lost.postpage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

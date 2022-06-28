@@ -11,6 +11,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -37,6 +38,7 @@ import com.google.firebase.storage.StorageTask;
 import com.squareup.picasso.Picasso;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PostViewActivity extends AppCompatActivity implements View.OnClickListener {
@@ -64,9 +66,9 @@ public class PostViewActivity extends AppCompatActivity implements View.OnClickL
 
     private String userId, userPostId, userPostEmail, postId, route, imageUrl;
 
-    public static final String POST_PROFILE = "com.example.lostfound.lostpostprofile",
-            POST_USER_ID = "com.example.lostfound.postuserid",
-            POST_USER_EMAIL = "com.example.lostfound.postuseremail";
+    public static final String POST_PROFILE = "com.example.lost.lostpostprofile",
+            POST_USER_ID = "com.example.lost.postuserid",
+            POST_USER_EMAIL = "com.example.lost.postuseremail";
 
     private static final int PICK_IMAGE_REQUEST = 1;
     private static final int CAMERA_REQUEST = 1888;
@@ -78,10 +80,10 @@ public class PostViewActivity extends AppCompatActivity implements View.OnClickL
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    GMailSender sender = new GMailSender("lostfoundee32f@gmail.com","A24518190d");
+                    GMailSender sender = new GMailSender("lostee32f@gmail.com","A24518190d");
                     //sender.addAttachment(Environment.getExternalStorageDirectory().getPath()+"/image.jpg");
                     sender.sendMail(
-                            "Found Item", "You have an item that someone lost.","lostfoundee32f@gmail.com",email);
+                            "Found Item", "You have an item that someone lost.","lostee32f@gmail.com",email);
                 }
                 catch (Exception e) {
                     Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
@@ -115,6 +117,7 @@ public class PostViewActivity extends AppCompatActivity implements View.OnClickL
 
         // Open up camera
         buttonCamera.setOnClickListener(new View.OnClickListener(){
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view){
                 if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {

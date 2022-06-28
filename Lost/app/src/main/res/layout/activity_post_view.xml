@@ -20,7 +20,7 @@
             android:layout_height="25dp"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/back" />
+            app:srcCompat="@drawable/back" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -89,7 +89,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonMessage"
-                style="@style/Widget.LostFound.Button.TextButton"
+                style="@style/Widget.Lost.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -100,7 +100,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonTrack"
-                style="@style/Widget.LostFound.Button.TextButton"
+                style="@style/Widget.Lost.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -110,7 +110,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCall"
-                style="@style/Widget.LostFound.Button.TextButton"
+                style="@style/Widget.Lost.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"

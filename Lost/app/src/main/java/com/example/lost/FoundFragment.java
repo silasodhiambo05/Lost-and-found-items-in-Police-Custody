@@ -36,14 +36,14 @@ public class FoundFragment extends Fragment{
 
     private List<Post> postList;
 
-    public static final String POST_USER = "com.example.lostfound.postuser",
-            POST_TITLE = "com.example.lostfound.posttitle",
-            POST_DESCRIPTION = "com.example.lostfound.postdescription",
-            POST_PHONE_NUMBER = "com.example.lostfound.postphonenumber",
-            POST_ID = "com.example.lostfound.postid",
-            POST_USER_ID = "com.example.lostfound.postuserid",
-            POST_USER_EMAIL = "com.example.lostfound.postuseremail",
-            POST_ROUTE = "com.example.lostfound.postpage";
+    public static final String POST_USER = "com.example.lost.postuser",
+            POST_TITLE = "com.example.lost.posttitle",
+            POST_DESCRIPTION = "com.example.lost.postdescription",
+            POST_PHONE_NUMBER = "com.example.lost.postphonenumber",
+            POST_ID = "com.example.lost.postid",
+            POST_USER_ID = "com.example.lost.postuserid",
+            POST_USER_EMAIL = "com.example.lost.postuseremail",
+            POST_ROUTE = "com.example.lost.postpage";
 
     public FoundFragment(){
 

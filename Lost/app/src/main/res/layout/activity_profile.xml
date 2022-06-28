@@ -20,7 +20,7 @@
             android:layout_height="25dp"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/back" />
+            app:srcCompat="@drawable/back" />
 
         <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/imageView"
@@ -40,24 +40,28 @@
             android:layout_marginRight="10dp"
             android:layout_above="@+id/button_upload"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
             android:layout_marginBottom="5dp" />
 
         <Button
             android:id="@+id/button_choose_image"
-            style="@style/Widget.LostFound.Button.TextButton"
+            style="@style/Widget.Lost.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:text="Choose file"
             app:strokeColor="@color/button"
             app:strokeWidth="1dp"/>
 
         <Button
             android:id="@+id/buttonCamera"
-            style="@style/Widget.LostFound.Button.TextButton"
+            style="@style/Widget.Lost.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:text="Open Camera"
             app:strokeColor="@color/button"
             app:strokeWidth="1dp"/>
@@ -121,7 +125,7 @@
 
         <Button
             android:id="@+id/buttonSave"
-            style="@style/Widget.LostFound.Button.TextButton"
+            style="@style/Widget.Lost.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

@@ -12,6 +12,7 @@
         android:layout_height="fill_parent"
         android:layout_width="wrap_content"
         android:layout_marginBottom="48dp"
+        android:layout_marginTop="48dp"
         android:dividerHeight="0dp"
         android:divider="@null"/>
 
@@ -38,7 +39,7 @@
 
         <Button
             android:id="@+id/button_chatbox_send"
-            style="@style/Widget.LostFound.Button.TextButton"
+            style="@style/Widget.Lost.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:strokeColor="@color/button"

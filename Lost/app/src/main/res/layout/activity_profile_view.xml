@@ -19,7 +19,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="5dp"
-            android:src="@drawable/back" />
+            app:srcCompat="@drawable/back" />
 
         <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/imageView"
@@ -58,7 +58,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonMessage"
-                style="@style/Widget.LostFound.Button.TextButton"
+                style="@style/Widget.Lost.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -69,7 +69,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCall"
-                style="@style/Widget.LostFound.Button.TextButton"
+                style="@style/Widget.Lost.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
