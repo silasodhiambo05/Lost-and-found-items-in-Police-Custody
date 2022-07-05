@@ -17,7 +17,8 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Message"
+        android:hint="Message"
+
         android:maxLines="3"/>
 
 </LinearLayout>
