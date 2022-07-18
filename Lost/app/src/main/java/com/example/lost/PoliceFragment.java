@@ -70,7 +70,7 @@ public class PoliceFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
 
-        view = inflater.inflate(R.layout.fragment_found,container,false);
+        view = inflater.inflate(R.layout.fragment_police,container,false);
 
         listView = (ListView) view.findViewById(R.id.listView);
 

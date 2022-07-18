@@ -15,6 +15,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.lost.ViewPagerAdapter;
+import com.example.lost.FoundFragment;
+import com.example.lost.LostFragment;
+import com.example.lost.PoliceFragment;
+import com.example.lost.R;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
@@ -41,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private LostFragment lostFrag = new LostFragment();
     private FoundFragment foundFrag = new FoundFragment();
+    private PoliceFragment policeFrag = new PoliceFragment();
 
     public static final String POST_ROUTE = "com.example.lost.postpage";
 
@@ -117,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 else if (viewPager.getCurrentItem() == 1) {
                     foundFrag.refreshList(newText);
                 }
+		else if (viewPager.getCurrentItem() == 2) {
+                    policeFrag.refreshList(newText);
+                }
                 return false;
             }
         });
@@ -128,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Add fragments
         adapter.addFragment(lostFrag,"Lost");
         adapter.addFragment(foundFrag,"Found");
+	adapter.addFragment(policeFrag,"Police");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
@@ -152,6 +163,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             else if (viewPager.getCurrentItem() == 1){
                 intent.putExtra(POST_ROUTE, "FOUND");
+            }
+	    else if (viewPager.getCurrentItem() == 1){
+                intent.putExtra(POST_ROUTE, "POLICE");
             }
             startActivity(intent);
         }

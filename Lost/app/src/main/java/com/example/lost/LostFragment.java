@@ -12,6 +12,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
+import com.example.lost.PostViewActivity;
+import com.example.lost.PostAdapter;
+import com.example.lost.Post;
+import com.example.lost.R;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

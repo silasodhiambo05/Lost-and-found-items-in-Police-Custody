@@ -80,10 +80,10 @@ public class PostViewActivity extends AppCompatActivity implements View.OnClickL
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    GMailSender sender = new GMailSender("lostee32f@gmail.com","A24518190d");
+                    GMailSender sender = new GMailSender("silasodhiambo05@gmail.com","complete");
                     //sender.addAttachment(Environment.getExternalStorageDirectory().getPath()+"/image.jpg");
                     sender.sendMail(
-                            "Found Item", "You have an item that someone lost.","lostee32f@gmail.com",email);
+                            "Found Item", "You have an item that someone lost.","silasodhiambo05@gmail.com",email);
                 }
                 catch (Exception e) {
                     Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();

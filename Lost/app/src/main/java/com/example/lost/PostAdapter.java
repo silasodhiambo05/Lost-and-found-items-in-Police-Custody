@@ -6,8 +6,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
+import com.example.lost.Post;
+import com.example.lost.R;
 
+import androidx.fragment.app.FragmentActivity;
 import java.util.List;
 
 
